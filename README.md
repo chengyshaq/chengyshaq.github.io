@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to our pages
 
 You can use the [editor on GitHub](https://github.com/chengyshaq/chengyshaq.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
