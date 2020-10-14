@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0em 0em 0em 23rem;
+    background-color: #dee2e6;
+}
+
+#navigation {
+    top: 0;
+    left: 0;
+    width: 23rem;
+    height: 100%;
+    display: block;
+    position: fixed;
+    background-size: cover;
+    border-right: 1px #eee solid;
+    background-color: whitesmoke;
+    box-shadow: 16px 0px 42px -8px rgba(0, 0, 0, 0.2);
+}
+
+.navItem {
+    margin: 2rem 2rem 0em 2rem;
+}
+
+#bioGraphy {
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0px 16px 24px -8px rgba(0, 0, 0, 0.2);
+}
+
+#name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#introduction {
+    margin-top: 1rem;
+    font-weight: 200;
+    overflow-y: auto;
+    max-height: 18rem;
+    /* text-align: justify;
+    text-justify: inter-ideograph; */
+}
+
+.navigations {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    flex-direction: column;
+}
+
+.anchor {
+    font-weight: 700;
+    color: #28C76F;
+    font-size: 1.5rem;
+    width: fit-content;
+    transition: all 0.2s;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+}
+
+.anchor:hover {
+    font-size: 1.8rem;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+    bottom: 0;
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contactMe {
+    margin: 0 0.5em 0 0;
+    text-decoration: none;
+}
+
+.contactIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    transition: all 0.2s;
+    fill: rgba(0, 0, 0, 0.6);
+}
+
+.icon1:hover {
+    fill: #1ab37c;
+}
+
+.icon2:hover {
+    fill: #2ba245;
+}
+
+.icon3:hover {
+    fill: #f76260;
+}
+
+.icon4:hover {
+    fill: #2782d7;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.mainItemContainer {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 2rem 3rem 3rem 3rem;
+    background-color: whitesmoke;
+    box-shadow: 0 8px 42px -8px rgba(0, 0, 0, 0.2);
+}
+
+.megaTitle {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bolder;
+    margin: 0 0 0.5rem 0;
+}
+
+.subItemContainer {
+    border-style: solid;
+    border-top-width: 1px;
+    padding: 0.5rem 0 0 0;
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.ribbionStrip {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.ribbionItem {
+    color: white;
+    font-weight: 600;
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+    margin: 0 0.5rem 0 0;
+    display: inline-block;
+    border-radius: 0.3rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.mainItemContainer>.subItemContainer:last-child>.ribbionStrip {
+    margin-bottom: 0;
+}
+
+.date {
+    background-color: #0396FF;
+}
+
+.journal {
+    background-color: #FD6585;
+}
+
+.conference {
+    background-color: #9F44D3;
+}
+
+.issuer {
+    background-color: #28C76F;
+}
+
+.subItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.introContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-basis: auto;
+    margin: 0 1rem 0 0;
+    flex-direction: column;
+}
+
+.introContainer div:first-child {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    height: fit-content;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.introContainer div:last-child {
+    width: 100%;
+    flex-grow: 1;
+    font-weight: 200;
+    flex-basis: auto;
+    flex-direction: column;
+}
+
+.buttonContainer {
+    margin: 1em;
+    width: 10rem;
+    text-align: center;
+}
+
+.repoButton {
+    width: 8rem;
+    margin: 0 auto;
+    line-height: 2rem;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.2rem 0 0.2rem 0;
+    background-color: #1f6bcd;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.repoButton:hover {
+    transform: scale(1.2, 1.2);
+    background-color: #2f7bfd;
+    /* box-shadow: 0 6px 32px -8px rgba(0, 0, 0, 0.6); */
+}
+
+.buttonIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    margin: 0 0.3rem 0.3rem 0;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Style/indexStyle.css">
+    <link rel="stylesheet" type="text/css" href="style/comonStyle.css">
+    <script src="Script/svg-inject.js"></script>
+</head>
+
+<body>
+    <div id="navigation">
+        <img class="navItem" id="bioGraphy" src="Resources/bioPlaceholder.JPG" />
+        <div class="navItem" id="name">
+            YuSheng Cheng
+        </div>
+        <div class="navItem" id="introduction">
+            YuSheng Cheng is a professor at Anqing Normal University (AQNU),
+            Anhui, China. He received his Ph.D. in the School of Computer and
+            Information Science of Hefei University of Technology in 2007.
+            His research interests concern the rough set theory and algorithm,
+            semi supervised learning and data mining. He is the author of more than 50 papers
+            in journals and conference proceedings such as Information Science, Knowledge-Based Systems,
+            Neurocomputing, Applied Soft Computing, PAKDD and so on.
+        </div>
+        <div class="navItem navigations">
+                <a class="anchor" href="#news">News</a>
+                <a class="anchor" href="#publications">Publications</a>
+        </div>
+        <div class="navItem" id="contact">
+            <a class="contactMe" href="https://www.baidu.com" target="_blank">
+                <img class="contactIcon icon1" src="Resources/icon-phone.svg" onload="SVGInject(this)"
+                    type="image/svg+xml" />
+            </a>
+            <a class="contactMe" href="https://www.baidu.com" target="_blank">
+                <img class="contactIcon icon2" src="Resources/icon-wechat.svg" onload="SVGInject(this)"
+                    type="image/svg+xml" />
+            </a>
+            <a class="contactMe" href="https://www.aqnu.edu.cn/" target="_blank">
+                <img class="contactIcon icon3" src="Resources/icon-location.svg" onload="SVGInject(this)"
+                    type="image/svg+xml" />
+            </a>
+            <a class="contactMe" href="mailto:name@email.com" target="_blank">
+                <img class="contactIcon icon4" src="Resources/icon-mail.svg" onload="SVGInject(this)"
+                    type="image/svg+xml" />
+            </a>
+        </div>
+    </div>
+
+    <div id="main"> 
+        <a id="news"></a>
+        <div class="mainItemContainer">
+            <div class="megaTitle">News</div>
+
+            <!--  -->
+            <div class="subItemContainer">
+                <!--  -->
+                <div class="subItem">
+                    You would be in the first cohort of my students, please send me an email with your interests.
+                </div>
+                <div class="ribbionStrip">
+                    <div class="ribbionItem date">2020.10.11</div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="subItemContainer">
+                <!--  -->
+                <div class="subItem">
+                    I'll be taking PhD students starting in October 2021. You would be in the first cohort of my
+                    students, considering starting a PhD in fundamental machine learning, please send me an email
+                    with your interests.
+                </div>
+                <div class="ribbionStrip">
+                    <div class="ribbionItem date">2020.10.11</div>
+                </div>
+            </div>
+        </div>
+
+        <a id="publications"></a>
+        <div class="mainItemContainer">
+            <div class="megaTitle">Publications</div>
+
+            <!--  -->
+            <div class="subItemContainer">
+                <div class="subItem">
+                    <div class="pubItem introContainer">
+                        <!-- title of the paper -->
+                        <div>Causal Inference for Multi-Label Learning</div>
+                        <!-- description of the paper -->
+                        <div>As an effective method for mining latent correlation information between labels, label
+                            correlation is widely adopted by many scholars to model multi-label learning algorithms.
+                            However, the asymmetry of correlation is commonly existed in the real world and the existing
+                            label correlation ignores that the correlation between labels may be asymmetric. Based on
+                            this, a multi-label learning algorithm (CCML, Causality and Correlation for Multi-Label
+                            Learning) using Causal Inference is proposed in this paper...
+                        </div>
+                    </div>
+                    <div class="pubItem buttonContainer">
+                        <!-- link of the code -->
+                        <a class="repoButton visitRepo" href="https://www.baidu.com" target="_blank">
+                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
+                            Repository
+                        </a>
+                    </div>
+                </div>
+                <div class="ribbionStrip">
+                    <div class="ribbionItem date">2020.10.11</div>
+                    <div class="ribbionItem journal">Journal Paper</div>
+                    <div class="ribbionItem issuer">Pattern Recognition</div>
+                </div>
+            </div>
+
+            <div class="subItemContainer">
+                <div class="subItem">
+                    <div class="pubItem introContainer">
+                        <!-- title of the paper -->
+                        <div>Causal Inference for Multi-Label Learning</div>
+                        <!-- description of the paper -->
+                        <div>As an effective method for mining latent correlation information between labels, label
+                            correlation is widely adopted by many scholars to model multi-label learning algorithms.
+                            However, the asymmetry of correlation is commonly existed in the real world and the existing
+                            label correlation ignores that the correlation between labels may be asymmetric. Based on
+                            this, a multi-label learning algorithm (CCML, Causality and Correlation for Multi-Label
+                            Learning) using Causal Inference is proposed in this paper...
+                        </div>
+                    </div>
+                    <div class="pubItem buttonContainer">
+                        <!-- link of the code -->
+                        <a class="repoButton visitRepo" href="https://www.baidu.com" target="_blank">
+                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
+                            Repository
+                        </a>
+                    </div>
+                </div>
+                <div class="ribbionStrip">
+                    <div class="ribbionItem date">2020.10.11</div>
+                    <div class="ribbionItem conference">Conference Paper</div>
+                    <div class="ribbionItem issuer">CVPR 2020</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
