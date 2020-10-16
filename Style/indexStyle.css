@@ -51,12 +51,11 @@ body {
 #name {
     font-size: 1.8rem;
     font-weight: bold;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 
 #introduction {
     font-weight: 200;
-    overflow-y: auto;
     margin-top: 1rem;
     max-height: 18rem;
 }
