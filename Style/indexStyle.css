@@ -13,23 +13,23 @@
 
 html {
     height: 100%;
+    overflow: hidden;
 }
 
 body {
     height: 100%;
+    display: flex;
+    flex-direction: row;
     white-space: normal;
     word-wrap: break-word;
-    padding: 0em 0em 0em 23rem;
     background-color: #dee2e6;
 }
 
 #navigation {
-    top: 0;
-    left: 0;
-    width: 23rem;
+    width: 25rem;
     height: 100%;
-    display: block;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
     background-size: cover;
     border-right: 1px #eee solid;
     background-color: whitesmoke;
@@ -37,31 +37,33 @@ body {
 }
 
 .navItem {
-    margin: 2rem 2rem 0em 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #portrait {
     width: 18rem;
     height: 12rem;
+    margin-top: 2rem;
     box-shadow: 0px 16px 24px -8px rgba(0, 0, 0, 0.2);
 }
 
 #name {
     font-size: 1.8rem;
     font-weight: bold;
+    margin-top: 2.5rem;
 }
 
 #introduction {
-    margin-top: 1rem;
     font-weight: 200;
     overflow-y: auto;
+    margin-top: 1rem;
     max-height: 18rem;
 }
 
 .navigations {
     display: flex;
     margin-top: 1rem;
-    margin-left: 1rem;
     flex-direction: column;
 }
 
@@ -74,24 +76,27 @@ body {
     display: inline-block;
     text-decoration: none;
     border-radius: 0.5rem;
-    padding: 0.2rem 1rem 0.2rem 1rem;
+    padding: 0.2rem 1rem 0.2rem 0;
 }
 
 .anchor:hover {
+    color: #2feb83;
     font-size: 1.8rem;
-    background-color: #ffffff;
-    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.2);
+}
+
+.elasticable {
+    flex: 1 0 auto;
 }
 
 #contact {
     bottom: 0;
-    position: absolute;
+    flex: 0 0 auto;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 .contactMe {
-    margin: 0 0.5em 0 0;
+    margin: 0 0.5rem 0 0;
     text-decoration: none;
 }
 
@@ -122,7 +127,7 @@ body {
 
 .mainItemContainer {
     padding: 1.5rem;
-    min-width: 40rem;
+    min-width: 20rem;
     border-radius: 0.5rem;
     margin: 2rem 3rem 3rem 3rem;
     background-color: whitesmoke;
@@ -195,16 +200,8 @@ body {
     margin: 0.5rem 0 0 0;
 }
 
-/* .introContainer div:last-child {
-    width: 100%;
-    flex-grow: 1;
-    font-weight: 200;
-    flex-basis: auto;
-    flex-direction: column;
-} */
-
 .buttonContainer {
-    margin: 1em;
+    margin: 1rem;
     text-align: center;
 }
 
@@ -235,6 +232,6 @@ body {
 }
 
 .disabledButton {
-    pointer-events:none;
+    pointer-events: none;
     background-color: #666565;
 }
