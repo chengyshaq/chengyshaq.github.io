@@ -6,12 +6,8 @@
     <title>Yusheng Cheng's team github.IO</title>
     <link rel="stylesheet" type="text/css" href="Style/indexStyle.css">
     <link rel="stylesheet" type="text/css" href="style/comonStyle.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="Script/svg-inject.js"></script>
-    <script type="text/javascript">
-        function displayQQ() {
-            alert("QQ ID: 406402655");
-        }
-    </script>
 </head>
 
 <body>
@@ -35,8 +31,8 @@
                 <a class="anchor" href="#publications">Publications</a>
             </div>
         </div>
-        <div class="navItem" id="contact">
-            <a class="contactMe" onclick="displayQQ();">
+        <div class="navItem contact">
+            <a class="contactMe" id="QQButton">
                 <img class="contactIcon icon1" src="Resources/icon-QQ.svg" onload="SVGInject(this)"
                     type="image/svg+xml" />
             </a>
@@ -52,21 +48,18 @@
         <a id="news"></a>
         <div class="mainItemContainer">
             <div class="megaTitle">News</div>
+            <div class="newsContainer">
 
-            <!-- Items for news, copy and modify this section -->
-            <div class=" newsContainer">
-                <div class="subItemContainer">
+                <!-- Items for news, copy and modify this section -->
+                <div class="subItemContainer newsContainer">
                     <!-- news content -->
-                    <div class="subItem">
-                        Hello World! Yusheng Cheng's team github.IO is online.
+                    <div class="newsContent">
+                        Hello World! Yusheng Cheng Team's homepage is online.
                     </div>
-                    <div class="ribbionStrip">
-                        <!-- news date -->
-                        <div class="ribbionItem date">2020.10.16</div>
-                    </div>
+                    <!-- news date -->
+                    <div class="newsDate">2020.10.16</div>
                 </div>
             </div>
-
         </div>
 
         <a id="publications"></a>
@@ -79,17 +72,53 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            Missing multi-label learning with non-equilibrium based on
-                            classification margin
+                            Label-Specific Features Learning for Feature-Specific Labels Association Mining
+                        </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
                         </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                Yusheng Cheng, Kun Qian, Yibin Wang, Dawei Zhao.
-                                <br>
-                                Applied Soft Computing, 2020, 86: 105924
-                            </div>
+                        <div class="info">
+                            • Yusheng Cheng, Lulu Zhang, Yibin Wang, Gensheng Pei.
+                            <br>
+                            • Journal of Computer Research and Development
+                            <br>
+                            • Accepted
+                        </div>
+                    </div>
+                    <div class="pubItem buttonContainer">
+                        <!-- link to the repository -->
+                        <a class="repoButton visitRepo disabledButton"
+                            href="https://github.com/chengyshaq/Label-Specific-Features-Learning-for-Feature-Specific-Labels-Association-Mining"
+                            target="_blank">
+                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
+                            Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Items For Paper, Copy this entire section and fill out the filed -->
+            <div class="subItemContainer">
+                <div class="subItem">
+                    <div class="pubItem introContainer">
+                        <!-- title of the paper -->
+                        <div class="paperTitle">
+                            Missing Multi-label Learning with Non-equilibrium Based on
+                            Classification Margin
+                        </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
+                        <!-- description of the paper -->
+                        <div class="info">
+                            • Yusheng Cheng, Kun Qian, Yibin Wang, Dawei Zhao.
+                            <br>
+                            • Applied Soft Computing
+                            <br>
+                            • 2020, 86: 105924
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -114,13 +143,12 @@
                             learning algorithm
                         </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                Yibin Wang, Weijie Zheng, Yusheng Cheng, Dawei Zhao.
-                                <br>
-                                Soft Computing, 2020, 24(9): 6553-6569
-                            </div>
+                        <div class="info">
+                            • Yibin Wang, Weijie Zheng, Yusheng Cheng, Dawei Zhao.
+                            <br>
+                            • Soft Computing
+                            <br>
+                            • 2020, 24(9): 6553-6569
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -141,235 +169,19 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            Multi-label Learning with Kernel Extreme Learning Machine AutoEncoder
-                        </div>
-                        <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                Yusheng Cheng, Dawei Zhao, Yibin Wang, Gensheng Pei.
-                                <br>
-                                Knowledge-Based Systems, 2019, 178: 1-10
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pubItem buttonContainer">
-                        <!-- link to the repository -->
-                        <a class="repoButton visitRepo"
-                            href="https://github.com/chengyshaq/Multi-label-Learning-with-Kernel-Extreme-Learning-Machine-Autoencoder"
-                            target="_blank">
-                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
-                            Repository
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Items For Paper, Copy this entire section and fill out the filed -->
-            <div class="subItemContainer">
-                <div class="subItem">
-                    <div class="pubItem introContainer">
-                        <!-- title of the paper -->
-                        <div class="paperTitle">
-                            Multi-label Learning of Non-equilibrium Labels Completion with Mean Shift
-                        </div>
-                        <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                Yusheng Cheng, Dawei Zhao, Wenfa Zhan, Yibin Wang.
-                                <br>
-                                Neurocomputing, 2018, 321: 92-102
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pubItem buttonContainer">
-                        <!-- link to the repository -->
-                        <a class="repoButton visitRepo"
-                            href="https://github.com/chengyshaq/Multi-label-Learning-of-Non-equilibrium-Labels-Completion-with-Mean-Shift"
-                            target="_blank">
-                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
-                            Repository
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Items For Paper, Copy this entire section and fill out the filed -->
-            <div class="subItemContainer">
-                <div class="subItem">
-                    <div class="pubItem introContainer">
-                        <!-- title of the paper -->
-                        <div class="paperTitle">
-                            Streaming Feature Selection for Multi-Label Data
-                            with Dynamic Sliding Windows and Feature Repulsion Loss
-                        </div>
-                        <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                Li Yu, Cheng Yusheng.
-                                <br>
-                                Entropy, 2019, 21(12): 1151
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pubItem buttonContainer">
-                        <!-- link to the repository -->
-                        <a class="repoButton visitRepo"
-                            href="https://github.com/chengyshaq/Streaming-Feature-Selection-for-Multi-Label-Data-with-Dynamic-Sliding-Windows-and-Feature-Repulsion-"
-                            target="_blank">
-                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
-                            Repository
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Items For Paper, Copy this entire section and fill out the filed -->
-            <div class="subItemContainer">
-                <div class="subItem">
-                    <div class="pubItem introContainer">
-                        <!-- title of the paper -->
-                        <div class="paperTitle">
-                            Automatic determination about precision parameter value based on inclusion
-                            degree with variable precision rough set model
-                        </div>
-                        <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                Yusheng Cheng, Wenfa Zhan, Xindong Wu, Yuzhou Zhang.
-                                <br>
-                                Information Sciences, 2015, 1(290): 72-85
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pubItem buttonContainer">
-                        <!-- link to the repository -->
-                        <a class="repoButton visitRepo"
-                            href="https://github.com/chengyshaq/Automatic-determination-about-precision-parameter-value-based-on-inclusion-degree-with-variable-prec"
-                            target="_blank">
-                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
-                            Repository
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Items For Paper, Copy this entire section and fill out the filed -->
-            <div class="subItemContainer">
-                <div class="subItem">
-                    <div class="pubItem introContainer">
-                        <!-- title of the paper -->
-                        <div class="paperTitle">
-                            Text classification of minimal risk with three-way decisions
-                        </div>
-                        <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                Yusheng Cheng, Kai Rui.
-                                <br>
-                                Journal of Information and Optimization Sciences, 2018, 39(4): 973~987
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pubItem buttonContainer">
-                        <!-- link to the repository -->
-                        <a class="repoButton visitRepo"
-                            href="https://github.com/chengyshaq/Text-Classification-of-Minimal-Risk-with-Three-way-decisions"
-                            target="_blank">
-                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
-                            Repository
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Items For Paper, Copy this entire section and fill out the filed -->
-            <div class="subItemContainer">
-                <div class="subItem">
-                    <div class="pubItem introContainer">
-                        <!-- title of the paper -->
-                        <div class="paperTitle">
-                            非平衡化标签补全的核极限学习机多标签学习
-                            <br>
-                            Multi-label Learning of Kernel Extreme Learning Machine with Non-equilibrium Label
-                            Completion
-                        </div>
-                        <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                程玉胜, 赵大卫, 王一宾, 裴根生.
-                                <br>
-                                电子学报, 2019, 47(3): 719-725
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pubItem buttonContainer">
-                        <!-- link to the repository -->
-                        <a class="repoButton visitRepo"
-                            href="https://github.com/chengyshaq/Multi-label-Learning-of-Kernel-Extreme-Learning-Machine-with-Non-Equilibrium-Label-Completion"
-                            target="_blank">
-                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
-                            Repository
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Items For Paper, Copy this entire section and fill out the filed -->
-            <div class="subItemContainer">
-                <div class="subItem">
-                    <div class="pubItem introContainer">
-                        <!-- title of the paper -->
-                        <div class="paperTitle">
-                            特征特定标记关联挖掘的类属属性学习
-                            <br>
-                            Label-Specific Features Learning for Feature-Specific Labels Association Mining
-                        </div>
-                        <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                程玉胜, 张露露, 王一宾, 裴根生.
-                                <br>
-                                计算机研究与发展, Accepted
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pubItem buttonContainer">
-                        <!-- link to the repository -->
-                        <a class="repoButton visitRepo disabledButton"
-                            href="https://github.com/chengyshaq/Label-Specific-Features-Learning-for-Feature-Specific-Labels-Association-Mining"
-                            target="_blank">
-                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
-                            Repository
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Items For Paper, Copy this entire section and fill out the filed -->
-            <div class="subItemContainer">
-                <div class="subItem">
-                    <div class="pubItem introContainer">
-                        <!-- title of the paper -->
-                        <div class="paperTitle">
-                            基于标记密度分类间隔面的组类属属性学习
-                            <br>
                             Group-Label-Specific Features Learning Based on Label-Density Classification Margin
                         </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                王一宾, 裴根生, 程玉胜.
-                                <br>
-                                电子与信息学报, 2020, 42(5): 1179-1187
-                            </div>
+                        <div class="info">
+                            • Yibin Wang, Gensheng Pei, Yusheng Cheng.
+                            <br>
+                            • Journal of Electronics & Information Technology
+                            <br>
+                            • 2020, 42(5): 1179-1187
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -390,18 +202,19 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            特征标记依赖自编码器的多标记特征提前方法
-                            <br>
                             Multi-Label Feature Extraction Method Relied on Feature-Label Dependence Auto-encoder
                         </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                程玉胜, 李志伟, 庞淑芳.
-                                <br>
-                                计算机科学与探索, 2020, 14(3): 470-481
-                            </div>
+                        <div class="info">
+                            • Yusheng Cheng, Zhiwei Li, Shufang Pang.
+                            <br>
+                            • Journal of Frontiers of Computer Science and Technology
+                            <br>
+                            • 2020, 14(3): 470-481
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -422,19 +235,113 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            结合滑动窗口与模糊互信息的多标记流特征选择
+                            Multi-label Learning with Kernel Extreme Learning Machine AutoEncoder
+                        </div>
+                        <!-- description of the paper -->
+                        <div class="info">
+                            • Yusheng Cheng, Dawei Zhao, Yibin Wang, Gensheng Pei.
                             <br>
+                            • Knowledge-Based Systems
+                            <br>
+                            • 2019, 178: 1-10
+                        </div>
+                    </div>
+                    <div class="pubItem buttonContainer">
+                        <!-- link to the repository -->
+                        <a class="repoButton visitRepo"
+                            href="https://github.com/chengyshaq/Multi-label-Learning-with-Kernel-Extreme-Learning-Machine-Autoencoder"
+                            target="_blank">
+                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
+                            Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Items For Paper, Copy this entire section and fill out the filed -->
+            <div class="subItemContainer">
+                <div class="subItem">
+                    <div class="pubItem introContainer">
+                        <!-- title of the paper -->
+                        <div class="paperTitle">
+                            Multi-label Learning of Kernel Extreme Learning Machine with Non-equilibrium Label
+                            Completion
+                        </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
+                        <!-- description of the paper -->
+                        <div class="info">
+                            • Yusheng Cheng, Dawei Zhao, Yibin Wang, Gensheng Pei.
+                            <br>
+                            • Chinese Journal of Electronics
+                            <br>
+                            • 2019, 47(3): 719-725
+                        </div>
+                    </div>
+                    <div class="pubItem buttonContainer">
+                        <!-- link to the repository -->
+                        <a class="repoButton visitRepo"
+                            href="https://github.com/chengyshaq/Multi-label-Learning-of-Kernel-Extreme-Learning-Machine-with-Non-Equilibrium-Label-Completion"
+                            target="_blank">
+                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
+                            Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Items For Paper, Copy this entire section and fill out the filed -->
+            <div class="subItemContainer">
+                <div class="subItem">
+                    <div class="pubItem introContainer">
+                        <!-- title of the paper -->
+                        <div class="paperTitle">
+                            Streaming Feature Selection for Multi-Label Data
+                            with Dynamic Sliding Windows and Feature Repulsion Loss
+                        </div>
+                        <!-- description of the paper -->
+                        <div class="info">
+                            • Yu Li, Yusheng Cheng.
+                            <br>
+                            • Entropy
+                            <br>
+                            • 2019, 21(12): 1151
+                        </div>
+                    </div>
+                    <div class="pubItem buttonContainer">
+                        <!-- link to the repository -->
+                        <a class="repoButton visitRepo"
+                            href="https://github.com/chengyshaq/Streaming-Feature-Selection-for-Multi-Label-Data-with-Dynamic-Sliding-Windows-and-Feature-Repulsion-"
+                            target="_blank">
+                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
+                            Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Items For Paper, Copy this entire section and fill out the filed -->
+            <div class="subItemContainer">
+                <div class="subItem">
+                    <div class="pubItem introContainer">
+                        <!-- title of the paper -->
+                        <div class="paperTitle">
                             Multi-label Streaming Feature Selection Combining Sliding Window and Fuzzy Mutual
                             Information
                         </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                程玉胜, 李雨, 王一宾, 陈飞.
-                                <br>
-                                小型微型计算机系统, 2019, 40(2): 320-327
-                            </div>
+                        <div class="info">
+                            • Yusheng Cheng, Yu Li, Yibin Wang, Fei Chen.
+                            <br>
+                            • Journal of Chinese Computer Systems
+                            <br>
+                            • 2019, 40(2): 320-327
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -455,18 +362,19 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            基于标记分布的异态集成学习算法
-                            <br>
                             Heterogeneous Ensemble Learning Algorithm Based on Label Distribution Learning
                         </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                王一宾, 田文泉, 程玉胜.
-                                <br>
-                                模式识别与人工智能, 2019, 32(10): 945-954
-                            </div>
+                        <div class="info">
+                            • Yibin Wang, Wenquan Tian, Yusheng Cheng.
+                            <br>
+                            • Pattern Recognition and Artificial Intelligence
+                            <br>
+                            • 2019, 32(10): 945-954
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -487,18 +395,19 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            弹性网络核极限学习机的多标记学习算法
-                            <br>
                             Multi-label learning algorithm of an elastic net kernel extreme learning machine
                         </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                王一宾, 裴根生, 程玉胜.
-                                <br>
-                                智能系统学报, 2019, 14(4): 831-842
-                            </div>
+                        <div class="info">
+                            • Yibin Wang, Gensheng Pei, Yusheng Cheng.
+                            <br>
+                            • CAAI Transactions on Intelligent Systems
+                            <br>
+                            • 2019, 14(4): 831-842
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -519,18 +428,19 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            结合谱聚类的标记分布学习
-                            <br>
-                            Label distribution learning based on spectral clustering
+                            Label Distribution Learning Based on Spectral Clustering
+                        </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
                         </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                王一宾, 李田力, 程玉胜.
-                                <br>
-                                智能系统学报, 2019, 14(5): 966-973
-                            </div>
+                        <div class="info">
+                            • Yibin Wang, Tianli Li, Yusheng Cheng.
+                            <br>
+                            • CAAI Transactions on Intelligent Systems
+                            <br>
+                            • 2019, 14(5): 966-973
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -551,18 +461,77 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            近邻标签空间非平衡化标签补全的多标签学习
-                            <br>
-                            Multi-label Learning for Non-equilibrium Labels Completion in Neighborhood Labels Space
+                            Multi-label Learning of Non-equilibrium Labels Completion with Mean Shift
                         </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                程玉胜, 赵大卫, 钱坤.
-                                <br>
-                                模式识别与人工智能, 2018, 31(8): 740-749
-                            </div>
+                        <div class="info">
+                            • Yusheng Cheng, Dawei Zhao, Wenfa Zhan, Yibin Wang.
+                            <br>
+                            • Neurocomputing
+                            <br>
+                            • 2018, 321: 92-102
+                        </div>
+                    </div>
+                    <div class="pubItem buttonContainer">
+                        <!-- link to the repository -->
+                        <a class="repoButton visitRepo"
+                            href="https://github.com/chengyshaq/Multi-label-Learning-of-Non-equilibrium-Labels-Completion-with-Mean-Shift"
+                            target="_blank">
+                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
+                            Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Items For Paper, Copy this entire section and fill out the filed -->
+            <div class="subItemContainer">
+                <div class="subItem">
+                    <div class="pubItem introContainer">
+                        <!-- title of the paper -->
+                        <div class="paperTitle">
+                            Text Classification of Minimal Risk with Three-way Decisions
+                        </div>
+                        <!-- description of the paper -->
+                        <div class="info">
+                            • Yusheng Cheng, Kai Rui.
+                            <br>
+                            • Journal of Information and Optimization Sciences
+                            <br>
+                            • 2018, 39(4): 973~987
+                        </div>
+                    </div>
+                    <div class="pubItem buttonContainer">
+                        <!-- link to the repository -->
+                        <a class="repoButton visitRepo"
+                            href="https://github.com/chengyshaq/Text-Classification-of-Minimal-Risk-with-Three-way-decisions"
+                            target="_blank">
+                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
+                            Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Items For Paper, Copy this entire section and fill out the filed -->
+            <div class="subItemContainer">
+                <div class="subItem">
+                    <div class="pubItem introContainer">
+                        <!-- title of the paper -->
+                        <div class="paperTitle">
+                            Multi-label Learning for Non-equilibrium Labels Completion in Neighborhood Labels Space
+                        </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
+                        <!-- description of the paper -->
+                        <div class="info">
+                            • Yusheng Cheng, Dawei Zhao, Kun Qian.
+                            <br>
+                            • Pattern Recognition and Artificial Intelligence
+                            <br>
+                            • 2018, 31(8): 740-749
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -583,18 +552,19 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            回归核极限学习机的多标记学习算法
-                            <br>
                             Multi-label Learning Algorithm of Regression Kernel Extreme Learning Machine
                         </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                王一宾, 程玉胜, 何月, 裴根生.
-                                <br>
-                                模式识别与人工智能, 2018, 31(5): 419-430
-                            </div>
+                        <div class="info">
+                            • Yibin Wang, Yusheng Cheng, Yue He, Gensheng Pei.
+                            <br>
+                            • Pattern Recognition and Artificial Intelligence
+                            <br>
+                            • 2018, 31(5): 419-430
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -615,19 +585,20 @@
                     <div class="pubItem introContainer">
                         <!-- title of the paper -->
                         <div class="paperTitle">
-                            基于三支概念格合并的决策背景规则提取
-                            <br>
                             Rules Extraction in Formal Decision Contexts Based on the Merging of Three-Way Concept
                             Lattices
                         </div>
+                        <!-- language annotation -->
+                        <div class="langAnnotation">
+                            Written in Chinese
+                        </div>
                         <!-- description of the paper -->
-                        <div class="ribbionStrip">
-                            <!-- info -->
-                            <div class="ribbionItem info">
-                                王一宾, 杨思春.
-                                <br>
-                                电子科技大学学报, 2018, 47(6): 913-920
-                            </div>
+                        <div class="info">
+                            • Yibin Wan, Sichun Yang.
+                            <br>
+                            • Journal of University of Electronic Science and Technology of China
+                            <br>
+                            • 2018, 47(6): 913-920
                         </div>
                     </div>
                     <div class="pubItem buttonContainer">
@@ -642,8 +613,67 @@
                 </div>
             </div>
 
+            <!-- Items For Paper, Copy this entire section and fill out the filed -->
+            <div class="subItemContainer">
+                <div class="subItem">
+                    <div class="pubItem introContainer">
+                        <!-- title of the paper -->
+                        <div class="paperTitle">
+                            Automatic Determination About Precision Parameter Value Based on Inclusion
+                            Degree with Variable Precision Rough Set Model
+                        </div>
+                        <!-- description of the paper -->
+                        <div class="info">
+                            • Yusheng Cheng, Wenfa Zhan, Xindong Wu, Yuzhou Zhang.
+                            <br>
+                            • Information Sciences
+                            <br>
+                            • 2015, 1(290): 72-85
+                        </div>
+                    </div>
+                    <div class="pubItem buttonContainer">
+                        <!-- link to the repository -->
+                        <a class="repoButton visitRepo"
+                            href="https://github.com/chengyshaq/Automatic-determination-about-precision-parameter-value-based-on-inclusion-degree-with-variable-prec"
+                            target="_blank">
+                            <img class="buttonIcon" src="Resources/icon-github.svg" type="image/svg+xml" />
+                            Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupContainer">
+        <div id="popContent">
+            <img class="QRCode" src="Resources/QRCode.png"/>
+            <div class="qqID">QQ: 406402655</div>
+            <button id="closeButton">CLOSE</button>
         </div>
     </div>
 </body>
+
+<script>
+    $(function () {
+        $("#popupContainer").hide()
+    })
+
+    $("#popContent").click(function () {
+        event.stopPropagation();
+    })
+
+    $("#QQButton").click(function () {
+        $("#popupContainer").show()
+    })
+
+    $("#popupContainer").click(function () {
+        $("#popupContainer").hide();
+    })
+
+    $("#closeButton").click(function () {
+        $("#popupContainer").hide()
+    })
+</script>
 
 </html>

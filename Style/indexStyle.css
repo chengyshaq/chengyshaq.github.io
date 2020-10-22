@@ -87,7 +87,7 @@ body {
     flex: 1 0 auto;
 }
 
-#contact {
+.contact {
     bottom: 0;
     flex: 0 0 auto;
     margin-top: 0.5rem;
@@ -125,17 +125,12 @@ body {
 }
 
 .mainItemContainer {
-    padding: 1.5rem;
     min-width: 20rem;
     border-radius: 0.5rem;
     margin: 2rem 3rem 3rem 3rem;
     background-color: whitesmoke;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
     box-shadow: 0 8px 42px -8px rgba(0, 0, 0, 0.2);
-}
-
-.newsContainer {
-    overflow-y: auto;
-    max-height: 20rem;
 }
 
 .megaTitle {
@@ -151,31 +146,31 @@ body {
     border-top-color: rgba(0, 0, 0, 0.1);
 }
 
-.ribbionStrip {
-    margin: 0 0 0.5rem 0;
+.newsContainer {
+    overflow-y: auto;
+    max-height: 15rem;
+    margin-bottom: 0.5rem;
 }
 
-.ribbionItem {
+.newsContent {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0.5rem 0 0 0;
+    color: #333333 !important;
+}
+
+.newsDate {
+    color: white;
+    font-size: 13px;
     font-weight: 400;
-    font-size: 0.9rem;
     user-select: none;
-    line-height: 1.5rem;
-    border-style: solid;
-    border-radius: 0.3rem;
+    line-height: 16px;
+    border-radius: 5px;
+    width: fit-content;
     display: inline-block;
-    padding: 0 0.5rem 0 0.5rem;
-    border-width: 1px 1px 1px 5px;
-    margin: 0.5rem 0.5rem 0.5rem 0;
-}
-
-.info {
-    /* border-color: #F6416C; */
-    border-color: #28C76F;
-    /* border-color: #0396FF; */
-}
-
-.date {
-    border-color: #0396FF;
+    background-color: #0396FF;
+    padding: 0.1rem 0.3rem 0.2rem 0.3rem;
 }
 
 .subItem {
@@ -193,10 +188,37 @@ body {
 
 .paperTitle {
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    height: fit-content;
+    line-height: 30px;
     margin: 0.5rem 0 0 0;
+    color: #333333 !important;
+}
+
+.langAnnotation {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    user-select: none;
+    line-height: 16px;
+    border-radius: 5px;
+    width: fit-content;
+    display: inline-block;
+    background-color: #47c27e;
+    padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+
+    /* edge compatibility */
+    display: table;
+}
+
+.info {
+    font-size: 13px;
+    font-weight: 400;
+    user-select: none;
+    line-height: 1.5rem;
+    display: inline-block;
+    border-color: #28C76F;
+    margin: 0 0.5rem 0.5rem 0;
 }
 
 .buttonContainer {
@@ -232,5 +254,57 @@ body {
 
 .disabledButton {
     pointer-events: none;
-    background-color: #666565;
+    background-color: #7e7e7e;
+}
+
+#popupContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(00, 00, 00, 0.3);
+    /* background-image: radial-gradient(circle, transparent, black); */
+}
+
+#popContent {
+    overflow: hidden;
+    border-radius: 5%;
+    background-color: whitesmoke;
+    box-shadow: 0 8px 42px -8px rgba(0, 0, 0, 0.9);
+}
+
+.QRCode {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.qqID {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333333 !important;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#closeButton {
+    padding: 0;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #1f6bcd;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s;
+    padding: 1rem 0 1rem 0;
+}
+
+#closeButton:hover {
+    background-color: #2f7bfd;
 }
